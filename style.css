@@ -1,0 +1,111 @@
+:root {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.2em;
+  box-sizing: border-box;
+  --primary: #fcbb6d;
+  --secondary: #d8737f;
+  --background: #475c7a;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  line-height: 1em;
+}
+
+#description {
+  font-size: 1.6rem;
+  line-height: 1em;
+}
+
+label,
+legend {
+  font-weight: 600;
+}
+
+.radio label,
+.checkbox label {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+span {
+  font-weight: 300;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3.2rem;
+  color: var(--primary);
+}
+
+#main {
+  background: var(--background);
+  padding: 3.2rem 2.4em 1.6em;
+  border-radius: 0.8rem;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background: var(--secondary);
+  font-size: 1.4rem;
+  padding: 1.6rem 2.4rem;
+  color: white;
+}
+
+fieldset {
+  margin-bottom: 1.6rem;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  border-radius: 2px;
+  border: none;
+  display: block;
+  width: 100%;
+  min-height: 3.2rem;
+  margin: 0.8rem 0;
+  padding: 0.8rem 0.4rem;
+  resize: vertical;
+}
+
+[type="radio"],
+[type="checkbox"] {
+  display: inline;
+  vertical-align: middle;
+  width: 1em;
+  height: 10px;
+  margin: 0 0.4em 0 0;
+  
+}
+
+button {
+    background: var(--primary);
+    font-weight: 500;
+    color: white;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 2.4rem 30vw;
+  }
+  h1{
+      font-size: 4.8rem;
+  }
+  button{
+      margin: 0 0 0 auto;
+    width: 120px;
+  }
+}
